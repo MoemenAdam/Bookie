@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bookie</title>
+    <link rel="icon" href="Logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6a55b70c17.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="inner-logo">
+            <a href="index.html"><img src="logo.png"></a>
+        </div>
+        <!-- ------------------------------------------------- Search box area ------------------------------------------------- -->
+        <div class="inner-search">
+            <input type="text" placeholder=" Search..." class="searching">
+            <a href="#"><i class="fas fa-search"></i></a>
+        </div>
+        <!-- -------------------------------------------------nav links area ------------------------------------------------- -->
+        <div class="inner-list" id="innerList">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li class="links"><a href="#home" id="home-margin" class="current">Home</a></li>
+                <li class="links"><a href="Books-page/books.html">Books</a></li>
+                <li class="links"><a href="#about">About us</a></li>
+                <li class="links"><a href="Contact Us/index.html">Contact us</a></li>
+                <li><a href="Signup-Login/LOGIN.html" id="login">Login</a></li>
+            </ul>
+        </div>
+        <!--------------------------------------------------- bars icon  --------------------------------------------------->
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+    </div>
+    <!-- -------------------------------------------------First Home Section --------------------------------------------------->
+    <section class="banner" id="home">
+        <div class="middle">
+            <div class="midtext">
+                <h1>Bookie.</h1>
+                <p class="short-txt">
+                    Tranquility, Serenity & Culture
+                </p>
+                <p class="long-txt">
+                    It is both relaxing and invigorating to occasionally set aside the worries of life, seek the company
+                    of a friendly book… from the reading of ‘good books’ there comes a richness of life that can be
+                    obtained in no other way.
+                </p>
+                <a href="Books-page/books.html" class="starting-links s1">Start Reading</a>
+                <a href="Signup-Login/Sign Up.html" class="starting-links s2">Sign Up</a>
+            </div>
+        </div>
+    </section>
+    <!-- -------------------------------------------------Latest section ------------------------------------------------- -->
+    <section class="latest-container" id="latest">
+        <div class="latest-area">
+            <h2>Latest Books.</h2>
+            <p>Take a look at what’s new.</p>
+            <div class="row">
+                <div class="latest-col col1">
+                    <img src="Latest/late1.jpg">
+                    <div class="story" id="s1">
+                        <p>
+                            This is the story of a grown-up meeting his inner child, embodied by a Little Prince.
+                            Traveling from an asteroid, he left his rose there to discover the world. Before landing on
+                            Earth he visited many planets and their inhabitants where all grown-ups incarnates
+                            humankind’s most common vice. When a fox tell him that the eyes are blind and we are
+                            responsible forever for what you tame, the Little Prince go back home to meet again with his
+                            Rose.<br>
+                            <a href="Books-page/books-pages/novels-inside/The_Little_Prince.html"><span
+                                    class="latest-links" id="l1"> View Details</span></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="latest-col col2">
+                    <img src="Latest/late2.png">
+                    <div class="story" id="s2">
+                        <p>Ex-FBI agent Will Graham (Edward Norton) is an expert investigator who quit the Bureau after
+                            almost losing his life in the process of capturing the elusive Dr. Lecter (Anthony Hopkins).
+                            After a series of particularly grisly murders, Graham soon realizes that the best way to
+                            catch this killer, known as the Tooth Fairy, is to find a way to get inside the killer's
+                            mind. For Graham, that means confronting his past and facing his former nemesis, the
+                            now-incarcerated Lecter. <br>
+                            <a href="Books-page/books-pages/novels-inside/reddragon.html"><span class="latest-links">
+                                    View Details</span></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="latest-col col3">
+                    <img src="Latest/late3.png">
+                    <div class="story" id="s3">
+                        <p>“Imaginary Friend” tells the story of 7-year-old Christopher who moves with his mother to a
+                            new town when she flees an abusive ex. After Christopher goes missing for six days, a series
+                            of strange occurrences take place, including a lottery windfall and Christopher's sudden
+                            intelligence. <br>
+                            <a href="Books-page/books-pages/novels-inside/imaginary-friend-book.html"><span
+                                    class="latest-links" id="l3"> View Details</span></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ------------------------------------------------- Slides section --------------------------------------------------->
+    <div class="slide-container" id="popular">
+        <section class="slides-area">
+            <h2>The Most Read.</h2>
+            <p>
+                The most read and searched books in our bookstore.
+            </p>
+            <div class="slider">
+                <img src="Slides/slide1.jfif">
+                <img src="Slides/slide2.jfif">
+                <img src="Slides/slide3.jfif">
+                <img src="Slides/slide4.jfif">
+                <img src="Slides/slide1.jfif">
+            </div>
+        </section>
+    </div>
+    <!-- --------------------------------------------------- About us Section --------------------------------------------------- -->
+    <section class="aboutus" id="about">
+        <div class="about-area">
+            <h2>About Us.</h2>
+            <div class="container">
+                <div class="card">
+                    <div class="circle">
+                        <h2>Eman</h2>
+                    </div>
+                    <div class="content">
+                        <p> She & Mohammed & John Created the footer of the website.</p>
+                        <a class="box-shadow1" href="#">Read More</a>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <div class="circle">
+                        <h2>Ismail</h2>
+                    </div>
+                    <div class="content">
+                        <p> He Created the Contact Us Page of the website.</p>
+                        <a class="box-shadow2" href="#">Read More</a>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <div class="circle">
+                        <h2>Badr</h2>
+                    </div>
+                    <div class="content">
+                        <p> He Created the Login & Sign Up Pages of the website.</p>
+                        <a class="box-shadow3" href="#">Read More</a>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="circle">
+                        <h2>Bishoy</h2>
+                    </div>
+                    <div class="content">
+                        <p> He & Moemen & John and Kero Created the Way of Showing The Book of the website.</p>
+                        <a class="box-shadow4" href="#">Read More</a>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="circle">
+                        <h2>Mostafa</h2>
+                    </div>
+                    <div class="content">
+                        <p> He Created The About Us Page Of the Webiste.</p>
+                        <a class="box-shadow5" href="#">Read More</a>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="circle">
+                        <h2>M.Nasr</h2>
+                    </div>
+                    <div class="content">
+                        <p> He Created The Home Page & He has The Idea Of the Website.</p>
+                        <a class="box-shadow6" href="#">Read More</a>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="circle">
+                        <h2>Fady</h2>
+                    </div>
+                    <div class="content">
+                        <p> He Helped in The Contact Us Page By Creating The (Rate Us).</p>
+                        <a class="box-shadow7" href="#">Read More</a>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="circle">
+                        <h2>John</h2>
+                    </div>
+                    <div class="content">
+                        <p> He & Moemen & Bishoy and Kero Created the Way of Showing The Book of the website.</p>
+                        <a class="box-shadow8" href="#">Read More</a>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="circle">
+                        <h2>Moemen</h2>
+                    </div>
+                    <div class="content">
+                        <p> He & John & Bishoy and Kero Created the Way of Showing The Book of the website.</p>
+                        <a class="box-shadow9" href="#">Read More</a>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="circle">
+                        <h2>Kero</h2>
+                    </div>
+                    <div class="content">
+                        <p> He & Moemen & Bishoy and John Created the Way of Showing The Book of the website.</p>
+                        <a class="box-shadow10" href="#">Read More</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- --------------------------------------------------- Rate us Section ----------------------------------------------------->
+    <section class="rate-area" id="feedback">
+        <h2>Rate us:</h2>
+        <div class="container">
+            <div class="post">
+                <div class="text">Thanks for rating us!</div>
+                <div class="edit">EDIT</div>
+            </div>
+            <div class="star-widget">
+                <input type="radio" name="rate" id="rate-5">
+                <label for="rate-5" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-4">
+                <label for="rate-4" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-3">
+                <label for="rate-3" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-2">
+                <label for="rate-2" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-1">
+                <label for="rate-1" class="fas fa-star"></label>
+                <form action="#">
+                    <header></header>
+                    <div class="textarea">
+                        <textarea cols="30" placeholder="Describe your experience.."></textarea>
+                    </div>
+                    <div class="btn">
+                        <button type="submit">Post</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- ------------------------------------------------- Footer ------------------------------------------------- -->
+    <footer class="footer">
+        <div class="upper-footer-list">
+            <ul>
+                <li><a href="About Us/About.html">About Bookie</a></li>
+                <li><a href="#feedback">Share your experience</a></li>
+                <li><a href="Contact Us/index.html">Contact</a></li>
+                <li><a href="Footer-links/help.html">Help</a></li>
+                <li><a href="#popular">Popular</a></li>
+            </ul>
+        </div>
+        <div class="footer-logo">
+            <a href="#home"><img src="Logo.png"></a>
+        </div>
+        <div class="lower-footer-list">
+            <ul>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://ae.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.reddit.com/" target="_blank"><i class="fab fa-reddit-alien"></i></a></li>
+            </ul>
+        </div>
+        <div class="rights">
+            <p>Made with 🧡 by our team, &copy; 2021 Bookie, All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- -------------------------------------------------JavaScript  --------------------------------------------------->
+    <script>
+        var innerList = document.getElementById("innerList");
+
+        // making the show menu function
+
+        function showMenu() {
+            innerList.style.right = "0";
+        }
+
+        // making the hdie menu function 
+
+        function hideMenu() {
+            innerList.style.right = "-200px";
+        }
+
+        // Rate us 
+        const btn = document.querySelector("button");
+        const post = document.querySelector(".post");
+        const widget = document.querySelector(".star-widget");
+        const editBtn = document.querySelector(".edit");
+        btn.onclick = () => {
+            widget.style.display = "none";
+            post.style.display = "block";
+            post.style.margin = "11px 0";
+            editBtn.onclick = () => {
+                widget.style.display = "block";
+                post.style.display = "none";
+            }
+            return false;
+        }
+    </script>
+</body>
+
+</html>

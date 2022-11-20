@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+/* -------------------------------------------------Header and Logo------------------------------------------------- */
+.header{
+    width: 100%;
+    height: 80px;
+    background: #101010;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(238,159,13);
+}
+.inner-logo img{
+    height: 75px;
+    margin: 0 40px 0 20px;
+}
+
+/* -------------------------------------------------the search bar ------------------------------------------*/
+
+.inner-search{
+    display: flex;
+    justify-content:flex-end;
+    flex: 0.7;
+    padding: 5px;
+}
+.inner-search input{
+    flex: 1 1 0px;
+    width: 200px;
+    background: white;
+    border: 2px solid rgb(238,159,13);
+    font-size: 18px;
+    border-radius: 40px;
+    color: black;
+    outline: none;
+    padding: 0 10px;
+}
+.inner-search a{
+    border-radius: 50%;
+    cursor: pointer;
+    border-left: none;
+    margin-left: -50px;
+}
+.inner-search .fa-search{
+    background: rgb(238,159,13);
+    border-radius: 50%;
+    padding:10px;
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #101010;
+    cursor: pointer;
+}
+
+/* -------------------------------------------------the header list------------------------------------------------- */
+.inner-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 2;
+}
+.inner-list ul{
+    display: flex;
+    list-style: none;
+    margin-right: 40px;
+}
+.inner-list ul li{
+    font-size: 15px;
+    margin: 0 3px;
+}
+.inner-list ul:last-child{
+    margin-left: auto;
+}
+.inner-list a, #login{
+    text-decoration: none;
+    padding:13px 25px;
+    transition: 0.4s;
+    color: white;
+}
+.inner-list ul li a:hover{
+    background: #595353;
+    border-radius: 3px;
+    border-bottom: 2px solid rgb(238,159,13);
+}
+.inner-list a:active{
+    color: rgb(238,159,13);
+    transition: 0s;
+}
+.links:nth-child(4){
+    margin-right: 50px;
+}
+.current{
+    background: #595353;
+    border-radius: 3px;
+    border-bottom: 2px solid rgb(238,159,13);
+    text-shadow: 0 0 0.3em rgb(238, 159, 13), 0 0 0.125em currentColor;
+}
+/* -------------------------------------------------sign up button -------------------------------------------------*/
+#login{
+    letter-spacing: 2px;
+    color: #101010;
+    background: rgb(238,159,13);
+    border-radius: 12px;
+}
+#login:hover{
+    color: white;
+    border-bottom: none;
+}
+#login:active, .contactform .sub-btn input:active{
+    text-shadow: 0 0 0.5em greenyellow;
+    transition: 0s;
+}
+.inner-list .fas,.header .fa-bars{
+    display: none;
+}
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(4,9, 30, 0.7),rgba(4, 9, 30, 0.7)),url(pexels-wendy-van-zyl-1112048.jpg);
+    background-size: cover;
+}
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2 {
+    height: 50px;
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(238, 159, 13);
+    margin-bottom: 20px;
+}
+.contact .content p {
+    font-weight: 300;
+    color: white;
+    margin-bottom: 40px;
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactinfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactinfo .box {
+    position: relative;
+    padding: 20px 0 ;
+    display: flex;
+}
+.container .contactinfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background-color: rgb(238, 159, 13);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactinfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactinfo .box .text h3{
+    font-weight: bold;
+    color: rgb(238, 159, 13);
+}
+.contactform {
+    width: 40%;
+    padding: 40px;
+    background-color: rgb(238, 159, 13);
+    border: 2px solid #101010;
+    border-radius: 5px;
+}
+.contactform h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+
+}
+.contactform .inputbox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea
+{
+    width: 100%;
+    padding: 5px 4px;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border: 2px solid #101010;
+    outline: none;
+    resize: none;
+}
+.contactform .inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+    padding-left: 4px;
+}
+.contactform .inputbox input:focus ~ span ,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span ,
+.contactform .inputbox textarea:valid ~ span {
+    color: #101010;
+    font-size: 12px;
+    transform: translate(-4px,-23px);
+} 
+.contactform .inputbox input[type="submit"] {
+    width: 100px;
+    background-color: #101010;
+    color: rgb(238, 159, 13);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 18px;
+    transition: color 0.5s;
+}
+.contactform .sub-btn input:hover{
+    color: white;
+}
+/*---------------------------------------------- the footer ---------------------------------------------- */
+footer p{
+    display: block;
+    position: absolute;
+    left: 20px;
+    bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    line-height: 130%;
+    font-size: 9.20px;
+    color: #808071;
+}
+@media(max-width: 1030px) and (hover:hover){
+
+    /*------------------------------------------------- list for small screens------------------------------------------------- */
+    .inner-list ul{
+        display: inline-block;
+        list-style: none;
+        margin-right: 0;
+        padding-top: 50px;
+        width: 100%;
+    }
+    .links:nth-child(4){
+        margin-right: 0px;
+    }
+    .inner-list ul li{
+        display: block;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin: -1px;
+    }
+    .inner-list ul li a{
+        color: #101010;
+    }
+    .inner-list .current{
+        background: none;
+        border-bottom: none;
+        color:#fff;
+    }
+    .inner-list{
+        position: absolute;
+        background:rgb(238, 159,13);
+        height: 100vh;
+        width: 200px;
+        top:0;
+        right: -200px;
+        text-align: center;
+        z-index: 2;
+        transition: 1s;
+        border-left: 2px solid #101010;
+        border-bottom: 2px solid #101010;
+    }
+
+    /* -------------------------------------------------border bottom for all li except signup -------------------------------------------------*/
+    .links{
+        border-bottom:  2px solid #101010;
+    }
+
+    /* -------------------------------------------------signup for small screens -------------------------------------------------*/
+    #login{
+        color: white;
+        background: #101010;
+        border-radius: 12px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #login:hover{
+        color: rgb(238, 159,13);
+    }
+    /*------------------------------------------------- Animation for small screens -------------------------------------------------*/
+
+
+    .inner-list ul li a:hover{
+        color: white;
+        background: none;
+        border-radius: 0;
+        border-bottom: none;
+    }
+    .inner-list .fas{
+        display: block;
+        position: absolute;
+        right: 80%;
+        padding: 10px;
+        color: #101010;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .header .fa-bars{
+        display: block;
+        padding: 40px;
+        color: rgb(238, 159, 13);
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .header .fa-bars:hover,.inner-list .fas:hover{
+        font-size: 25px;
+        transition: 0.3s;
+    }
+    .current{
+        text-shadow: 0 0 0.4em #101010, 0 0 0.125em currentColor;
+    }
+}
+@media (max-width: 991px){
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactinfo {
+        margin-bottom: 40px;
+    }
+    .container .contactinfo,
+    .contactform {
+        width: 100%;
+    }
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bookie</title>
+    <link rel="icon" href="../Logo.png">
+    <link rel="stylesheet" href="../navbar-middbg-style.css">
+    <link rel="stylesheet" href="../books-pages-style/authors-section-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6a55b70c17.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="inner-logo">
+            <a href="../../index.html"><img src="../../Logo.png"></a>
+        </div>
+        <!-- ------------------------------ Search box area ------------------------------------------------- -->
+        <div class="inner-search">
+            <input type="text" placeholder=" Search..." class="searching">
+            <a href="#"><i class="fas fa-search"></i></a>
+        </div>
+        <!-- ---------------------------------nav links area ------------------------------------------------- -->
+        <div class="inner-list" id="innerList">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li class="links"><a href="../../index.html" id="home-margin">Home</a></li>
+                <li class="links"><a href="../books.html" class="current">Books</a></li>
+                <li class="links"><a href="../../About Us/About.html">About us</a></li>
+                <li class="links"><a href="../../Contact Us/index.html">Contact us</a></li>
+                <li><a href="../../Signup-Login/LOGIN.html" id="login">Login</a></li>
+            </ul>
+        </div>
+        <!-------------------------------------- bars icon  --------------------------------------------------->
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+    </div>
+    <!-- -----------------------------background and Midtext--------------------------------------------------->
+    <section class="banner">
+        <div class="middle">
+            <div class="midtext">
+                <h1>Authors.</h1>
+                <p>
+                    “Good friends, good books, and a sleepy conscience: this is the ideal life.”
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- ------------------------------------Authors content section------------------------------------------------- -->
+    <section class="authors-area">
+        <div class="container">
+            <div class="authors">
+                <div class="item">
+                    <img src="https://img.ti-media.net/wp/uploads/sites/46/2015/09/Agatha-Christie-614x920.jpg">
+                    <div class="content">
+                        <h3>Agatha Christie</h3>
+                        <p>
+                            Dame Agatha Mary Clarissa Christie, Lady Mallowan,
+                            DBE (née Miller; 15 September 1890 – 12 January 1976) was
+                            an English writer known for her 66 detective novels and 14 short story
+                            collections, particularly those revolving around fictional detectives Hercule P
+                            oirot and Miss Marple.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://cdn.britannica.com/68/204268-050-8608BCDB/Toni-Morrison-2004.jpg">
+                    <div class="content">
+                        <h3>Toni Morrison</h3>
+                        <p>
+                            Toni Morrison, original name Chloe Anthony Wofford,
+                            (born February 18, 1931, Lorain, Ohio, U.S.—died August 5, 2019,
+                            Bronx, New York), American writer noted for her examination of Black experience
+                            (particularly Black female experience) within the Black community. She received the
+                            Nobel Prize for Literature in 1993
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://m.media-amazon.com/images/I/51HLugL4E-L._AC_.jpg">
+                    <div class="content">
+                        <h3>Ernest Hemingway</h3>
+                        <p>
+                            Ernest Hemingway, in full Ernest Miller Hemingway,
+                            (born July 21, 1899, Cicero [now in Oak Park], Illinois, U.S.—died July 2,
+                            1961, Ketchum, Idaho), American novelist and short-story writer, awarded the Nobel
+                            Prize for Literature in 1954
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img
+                        src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTQ3NjM5NTA5NjU4Mzc5NjUy/maya_angelou_photo_by_deborah_feingold_corbis_entertainment_getty_533084708.jpg">
+                    <div class="content">
+                        <h3>Maya Angelou.</h3>
+                        <p>
+                            Maya Angelou was an American author, actress, screenwriter,
+                            dancer, poet and civil rights activist best known for her 1969 memoir,
+                            I Know Why the Caged Bird Sings, which made literary history as the first
+                            nonfiction bestseller by an African American woman.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Clarice_Lispector_%28cropped%29.jpg">
+                    <div class="content">
+                        <h3>Clarice Lispector</h3>
+                        <p>
+                            Clarice Lispector, (born December 10, 1920, Chechelnyk
+                            Ukraine, Russian Empire—died December 9, 1977, Rio de Janeiro,
+                            Brazil), novelist and short-story writer, one of Brazil's most important literary
+                            figures, who is considered to be among the greatest women writers of the 20th century.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://i.pinimg.com/originals/37/fa/b1/37fab19ec41843dc639f0315b5a520ec.jpg">
+                    <div class="content">
+                        <h3>J.D. Salinger</h3>
+                        <p>
+                            Salinger, in full Jerome David Salinger, (born January 1, 1919, N
+                            ew York, New York, U.S.—died January 27, 2010, Cornish, New Hampshire),
+                            American writer whose novel The Catcher in the Rye (1951) won critical acclaim
+                            and devoted admirers, especially among the post-World War II generation of college students.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://janefriedman.com/wp-content/uploads/2012/09/sk_color_press_photo.jpeg">
+                    <div class="content">
+                        <h3>Stephen King</h3>
+                        <p>
+                            Stephen King, in full Stephen Edwin King, (born September 21,
+                            1947, Portland, Maine, U.S.), American novelist and short-story writer whose
+                            books were credited with reviving the genre of horror fiction in the late 20th century.
+                            King graduated from the University of Maine in 1970 with a bachelor's degree in English.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://i.pinimg.com/originals/c4/b2/04/c4b20480852b24b8e5a739ce937ffe22.jpg">
+                    <div class="content">
+                        <h3>F. Scott Fitzgerald</h3>
+                        <p>
+                            F. Scott Fitzgerald was a 20th-century American shor
+                            t-story writer
+                            and novelist. Although he completed four novels and more than 15
+                            0 short stories in his lifetime, he is perhaps best remembered for his third novel
+                            , The Great Gatsby (1925). The Great Gatsby is today widely c
+                            onsidered “the great American novel.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img
+                        src="https://www.thoughtco.com/thmb/5IO14KmHqT4x1uvmblDPAhCrais=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/noam-chomsky-headshot-d5a7d9ed5f364cbfb15a40f4e711dffc.jpg">
+                    <div class="content">
+                        <h3> Avram Noam</h3>
+                        <p>
+                            Avram Noam Chomsky (born December 7, 1928) is an American linguist,
+                            philosopher, cognitive scientist, historian,
+                            social critic, and political activist. ... He created or co-created the universal
+                            grammar theory, the generative grammar theory, the Chomsky hierarchy, and the minimalist
+                            program.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img
+                        src="https://s2.glbimg.com/XsbfFRDdcLdvQyLaQPsvHvbAYvs=/e.glbimg.com/og/ed/f/original/2020/11/10/50414449_1979923558782917_748461144397578240_o.jpg">
+                    <div class="content">
+                        <h3>J.K. Rowling</h3>
+                        <p>
+                            J.K. Rowling is the British author who created the popular and critically
+                            acclaimed Harry Potter series (seven books published between 1997 and 2007),
+                            about a lonely orphan who discovers that
+                            he is actually a wizard and enrolls in the Hogwarts School of Witchcraft and Wizardry
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://www.thefamouspeople.com/profiles/images/malcolm-gladwell-6.jpg">
+                    <div class="content">
+                        <h3>Malcolm Gladwell</h3>
+                        <p>
+                            Malcolm Gladwell is best known for his bestselling books The Tipping Point, Blink,
+                            and Outliers. He has also written for The New Yorker and The Washington Post.
+                            His writings encompass subjects such as psychology, economics, and sociology.
+                            Gladwell has also co-founded a podcast company and hosts the podcast Revisionist History.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img
+                        src="https://i0.wp.com/musicjo.com/wp-content/uploads/2020/09/Leo-Tolstoy-God-Sees-The-Truth-But-Waits-Short-Story.jpg?w=700&ssl=1">
+                    <div class="content">
+                        <h3>Leo Tolstoy</h3>
+                        <p>
+                            Born to an aristocratic Russian family in 1828,
+                            Tolstoy is best known for the novels War and Peace (1869)
+                            and Anna Karenina (1878), often cited as pinnacles of realist fiction.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer style="margin-bottom: -10px;">
+        <p>&copy; 2021 Bookie, All rights reserved.</p><br>
+    </footer>
+    <!-- --------------------------------------Linking JavaScript  --------------------------------------------------->
+    <script src="../Java.js"></script>
+</body>
+
+</html>
