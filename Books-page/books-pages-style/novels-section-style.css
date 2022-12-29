@@ -1,0 +1,180 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    position: relative;
+}
+
+a{text-decoration: none;}
+
+
+/*------------------------------- making the books slider section---------------------------------------- */
+.banner{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(4,9, 30, 0.7),rgba(4, 9, 30, 0.7)),url('../horror-books/horror-bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.middle{
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+.midtext{
+    text-align: center;
+}
+.midtext h1{
+    font-size: 62px;
+    color: rgb(238, 159, 13);
+    margin-bottom: 25px;
+}
+.middle p{
+    color: #777;
+    font-size: 16px;
+}
+
+
+/*------------------------------------------- making the novels section---------------------------------------- */
+
+.card{
+    width: 300px;
+    height: 450px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 50px;
+    margin-top:10px;
+}
+
+
+
+
+
+.card-img{
+    width: 85%;
+    height: 87%;
+    position: relative;
+    background-size: cover;
+    border-radius: 20px;
+    border: 10px solid black;
+    transform: translate(22px,28px);
+    opacity: 0.8;
+}
+.card-img img{
+    width: 100%;
+    height: 100%;
+ }
+.card-body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height: 87%;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 400px;
+    margin: auto;
+}
+
+.card-body:hover{
+    box-shadow: 0px 10px 30px rgba(168, 167, 167,0.5);
+    
+}
+
+.card:hover{
+    transform:scale(1.1);
+    z-index: 1;
+}
+
+.card-body .bg{
+    position: absolute;
+    background: rgb(7, 7, 7);
+    border-radius: 100px;
+    width: 0%;
+    transition: 0.3s ease-in-out;
+}
+
+.card-body .bg:nth-child(1){
+    height: 25%;
+    transform-origin: left;
+    top: 0;
+    left: -30%;
+    transform: rotate(-10deg);
+}
+
+.card-body .bg:nth-child(2){
+    height: 50%;
+    transform-origin: right;
+    top: 5%;
+    right: -30%;
+    transform: rotate(-10deg);
+}
+
+.card-body .bg:nth-child(3){
+    height: 50%;
+    transform-origin: left;
+    top: 70%;
+    left: -30%;
+    transform: rotate(-10deg);
+}
+
+.card:hover .card-body .bg{
+    width: 200%;
+    transition-delay: 0.1s;
+}
+
+.card:hover .card-body .bg:nth-child(2){
+    transition-delay: 0.3s;
+}
+
+.card:hover .card-body .bg:nth-child(3){
+    transition-delay: 0.5s;
+}
+
+.content{
+    position: relative;
+    transition: 0.5s;
+    opacity: 0;
+    padding: 40px 10px;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+}
+
+.title{
+    margin-top: -70px;
+    color: white;
+    text-transform:capitalize;
+    padding: 20px;
+    border-bottom: 1px solid rgb(238,159,13);
+}
+
+
+.card:hover .content{
+    opacity: 1;
+    transition-delay: 0.6s;
+} 
+
+.card-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+

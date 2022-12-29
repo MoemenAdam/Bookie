@@ -1,0 +1,139 @@
+body{
+    position: relative;
+    height: 100vh;
+}
+.page{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.photosection{
+    flex: 1 1 30%;
+}
+
+.contentsection{
+    flex:1 1 70%;
+}
+
+
+.photosection img{
+    height: 400px; width: auto;
+    margin: 10% 0 0 50%;
+    opacity: 0.6;
+}
+
+.contentsection .story{
+    text-align:left;
+    color:#f2f2f2;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    margin: 5% 0 50px 29%;
+}
+
+.contentsection img{
+    height: 130px; width: auto;
+    margin:10% 0 0 28%;
+}
+
+.play a{
+    padding: 10px 20px;
+    font-weight: 500;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+    margin-left:20px;
+}
+
+.play{
+    margin-left: 29%;
+}
+
+
+
+.play a:hover{
+    border: 1px solid #101010;
+    background: rgb(238, 159, 13);
+}
+
+
+@media(max-width: 1030px) and (hover:hover){
+    body{
+        height: 175vh;
+    }
+    .photosection , .contentsection{
+        text-align: center;
+    }
+
+    .photosection img{
+        text-align: center;
+        width: 400px;
+        height: auto;
+        margin-left: 20px;
+    }
+
+
+    .contentsection img{
+        width: 60%;
+        height: auto;
+        margin-left: 20px;
+    }
+    .contentsection .story{
+        text-align:center;
+        width: auto;
+        height: auto;
+        margin-left: 30px;
+    }
+    .play{
+        text-align:center;
+        margin: auto;
+        margin-bottom: 30px;
+        text-align: none;
+
+    }
+}
+
+
+.photosection a{
+    color: #EE9F0D ;
+    font-size: 30px;
+    transition: all 0.4s;
+    border-radius: 50%;
+}
+
+
+.photosection a:hover{
+    color: white ;
+    
+}
+
+.photosection a:focus{
+    text-shadow: 0 0 100em rgb(238, 159, 13), 0 0 1em currentColor;
+}
+
+.photosection a .fa-arrow-left{
+    position: absolute;
+    top:95px;
+    left: 15px;
+    border-radius: 50%;
+}
+
+.photosectio{border-radius: 50%;}
+/* ------------------------------------------ footer ----------------------------------------- */
+footer p{
+    display: block;
+    position: absolute;
+    left: 20px;
+    bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    line-height: 130%;
+    font-size: 9.20px;
+    color: #808071;
+}

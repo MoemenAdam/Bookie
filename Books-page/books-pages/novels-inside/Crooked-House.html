@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bookie</title>
+    <link rel="icon" href="../../Logo.png">
+    <link rel="stylesheet" href="../../navbar-middbg-style.css">
+    <link rel="stylesheet" href="all-novels-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6a55b70c17.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="inner-logo">
+            <a href="../../../index.html"><img src="../../logo.png"></a>
+        </div>
+        <!-- ------------------------------ Search box area ------------------------------------------------- -->
+        <div class="inner-search">
+            <input type="text" placeholder=" Search..." class="searching">
+            <a href="#"><i class="fas fa-search"></i></a>
+        </div>
+        <!-- ---------------------------------nav links area ------------------------------------------------- -->
+        <div class="inner-list" id="innerList">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li class="links"><a href="../../../index.html" id="home-margin">Home</a></li>
+                <li class="links"><a href="../../books.html" class="current">Books</a></li>
+                <!-- <li class="links"><a href="../../../About Us/About.html">About us</a></li> -->
+                <li class="links"><a href="../../../Contact Us/index.html">Contact us</a></li>
+                <li><a href="../../../Signup-Login/LOGIN.html" id="login">Login</a></li>
+            </ul>
+        </div>
+        <!---------------------------------- bars icon  --------------------------------------------------->
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+    </div>
+    <!-- --------------------------------------the story section--------------------------------------------------->
+
+    <style>
+        body {
+            min-height: auto;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.pinimg.com/736x/35/91/93/35919367ace647126712c13bfb68aff8.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+    </style>
+    <section class="page">
+        <div class="photosection">
+            <img src="https://upload.wikimedia.org/wikipedia/en/c/cc/Crooked_House_film_poster.jpg">
+
+            <a href="../novels-section.html"><i class="fas fa-arrow-left"></i></a>
+        </div>
+        <div class="contentsection">
+            <img src="https://occ-0-1723-1722.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABVLsBT9BRSLI9_1IUHdHlWJrn3aXP49pM6jyPdKdiZz2bRzHxd1DQRtHQaElHfjCy9TGLBsKWLj9hSpoUedM9ncda5mox5dobxRe.png?r=037">
+            <p style="margin-top:0;" class="story">
+                Young Sophia returns after the war to find her grandfather poisoned and a family filled with suspects. Luckily her fiance, Charles, is the son of the assistant commissioner of Scotland Yard.
+            </p>
+            <div class="play">
+                <a href="https://www.amazon.com/Crooked-House-Agatha-Christie/dp/0062073532" target="_blank"><i
+                        class="fas fa-play"></i> Buy</a>
+                <a href="#"><i class="fas fa-play"></i> Read Online</a>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2022 Bookie, All rights reserved.</p>
+        </footer>
+    </section>
+    <!-- --------------------------------------Linking JavaScript  --------------------------------------------------->
+
+    <script src="../../Java.js"></script>
+</body>
+
+
+</html>

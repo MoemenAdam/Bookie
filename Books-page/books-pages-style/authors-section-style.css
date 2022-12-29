@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* -------------------------------------------------- Authors Section ------------------------------------------------------- */
+
+.authors-area{
+    background: #101010;
+    min-height: 100vh;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.authors{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item{
+    margin: 20px 10px;
+    width: 280px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid rgb(238,159,13);
+    border-radius: 10px;
+}
+
+.item > img{
+    width: 100%;
+    height: 100%;
+}
+
+.content{
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    top: -100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 0.8s;
+}
+
+.content p{
+    margin-top: 20px;
+    padding: 20px 0;
+    border-top: 1px solid rgb(238,159,13);
+    border-bottom: 1px solid rgb(238,159,13);
+    position: absolute;
+}
+
+.content h3{
+    text-align: center;
+}
+
+.item:hover .content{
+    top: 0;
+}
+
+
+/*------------------------------- making the authors top background---------------------------------------- */
+.banner{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(4,9, 30, 0.7),rgba(4, 9, 30, 0.7)),url('../horror-books/horror-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.middle{
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+.midtext{
+    text-align: center;
+}
+.midtext h1{
+    font-size: 62px;
+    color: rgb(238, 159, 13);;
+    margin-bottom: 25px;
+}
+.middle p{
+    color: #777;
+    font-size: 16px;
+}
